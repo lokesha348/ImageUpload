@@ -1,10 +1,7 @@
 # ImageUpload
 
 ## Screens
-![Screenshot_20240114-012445](https://github.com/lokesha348/ImageUpload/assets/30767349/c15d640a-06da-40cd-98bb-b3d2af4a958b)
-![Screenshot_20240114-012441](https://github.com/lokesha348/ImageUpload/assets/30767349/376ced1e-5f1d-403c-a061-747413f563b4)
-![Screenshot_20240114-012428](https://github.com/lokesha348/ImageUpload/assets/30767349/fe67450c-06a6-448d-a773-9c1a630b560d)
-![Screenshot_20240114-012419](https://github.com/lokesha348/ImageUpload/assets/30767349/aeb016dc-65eb-4a2b-8afe-0785b64b9eb2)
+![Screenshot_20240114-012445](https://github.com/lokesha348/ImageUpload/assets/30767349/c15d640a-06da-40cd-98bb-b3d2af4a958b)![Screenshot_20240114-012441](https://github.com/lokesha348/ImageUpload/assets/30767349/376ced1e-5f1d-403c-a061-747413f563b4)![Screenshot_20240114-012428](https://github.com/lokesha348/ImageUpload/assets/30767349/fe67450c-06a6-448d-a773-9c1a630b560d)![Screenshot_20240114-012419](https://github.com/lokesha348/ImageUpload/assets/30767349/aeb016dc-65eb-4a2b-8afe-0785b64b9eb2)
 
 ## Image Upload App Documentation
 ## Overview
