@@ -1,7 +1,8 @@
 # ImageUpload
 
-## Screens
-![Screenshot_20240114-012445](https://github.com/lokesha348/ImageUpload/assets/30767349/c15d640a-06da-40cd-98bb-b3d2af4a958b)![Screenshot_20240114-012441](https://github.com/lokesha348/ImageUpload/assets/30767349/376ced1e-5f1d-403c-a061-747413f563b4)![Screenshot_20240114-012428](https://github.com/lokesha348/ImageUpload/assets/30767349/fe67450c-06a6-448d-a773-9c1a630b560d)![Screenshot_20240114-012419](https://github.com/lokesha348/ImageUpload/assets/30767349/aeb016dc-65eb-4a2b-8afe-0785b64b9eb2)
+## Screenshot
+![Screenshot_20240114-012419](https://github.com/lokesha348/ImageUpload/assets/30767349/3909fc9d-2c07-4c46-b515-a6cf7d4fa30d)
+![Screenshot_20240114-012428](https://github.com/lokesha348/ImageUpload/assets/30767349/87ac0a42-bd95-4b47-b254-3ee21d7521cb)
 
 ## Image Upload App Documentation
 ## Overview
@@ -11,8 +12,8 @@ The Image Upload Component is designed to simplify the process of selecting and 
 Image Source Options
 The Image Upload Component supports two primary options for selecting an image:
 
-1.Gallery: Users can choose an image from the device's gallery.
-2.Camera: Users can capture a picture using the device's camera.
+1. Gallery: Users can choose an image from the device's gallery.
+2. Camera: Users can capture a picture using the device's camera.
 
 ## Preview Functionality
 Once an image is selected, users can preview it by tapping the "Preview" button. This feature allows users to confirm their selection before proceeding with the upload.
