@@ -184,8 +184,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun openGallery() {
-        val intent = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.INTERNAL_CONTENT_URI)
-        startActivityForResult(intent, GALLERY)
+        if (permissionsRunTime!!.getPermission(permissionList, this@MainActivity)) {
+            val intent = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.INTERNAL_CONTENT_URI)
+            startActivityForResult(intent, GALLERY)
+        }
     }
 
     private fun openCamera() {
