@@ -1,4 +1,4 @@
-package com.task.imageuploadsoft.retrofit
+package com.task.imageuploadsoft.network.retrofit
 
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor

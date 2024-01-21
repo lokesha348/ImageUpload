@@ -1,16 +1,16 @@
-package com.task.imageuploadsoft.api
+package com.task.imageuploadsoft.network
 
 import android.util.Log
 import com.task.imageuploadsoft.util.Resource
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
 
-class ImageImplementation(val imageAPI: ImageAPI) : Image {
+class ImageRepositoryImpl(val imageAPIService: ImageAPIService) : ImageRepository {
     override suspend fun uploadImage(file: MultipartBody.Part, preset: RequestBody): Resource<Any> {
 
         return try {
 
-            val response = imageAPI.uploadImage(file, preset)
+            val response = imageAPIService.uploadImage(file, preset)
 
 
             val result = response.body()

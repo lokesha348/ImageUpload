@@ -7,10 +7,10 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.task.imageuploadsoft.api.Image
-import com.task.imageuploadsoft.api.ImageAPI
-import com.task.imageuploadsoft.api.ImageImplementation
-import com.task.imageuploadsoft.retrofit.RetrofitInterface
+import com.task.imageuploadsoft.network.ImageRepository
+import com.task.imageuploadsoft.network.ImageAPIService
+import com.task.imageuploadsoft.network.ImageRepositoryImpl
+import com.task.imageuploadsoft.network.retrofit.RetrofitInterface
 import com.task.imageuploadsoft.util.Resource
 import kotlinx.coroutines.launch
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
@@ -32,14 +32,14 @@ class MainActivityViewModel : ViewModel() {
         get() = mainEvent_
 
 
-    var image: Image? = null
-    var imageApi: ImageAPI? = null
+    var imageRepository: ImageRepository? = null
+    var imageApiService: ImageAPIService? = null
 
 
     init {
 
-        imageApi = RetrofitInterface.getRetrofitInstance().create(ImageAPI::class.java)
-        image = ImageImplementation(imageApi!!)
+        imageApiService = RetrofitInterface.getRetrofitInstance().create(ImageAPIService::class.java)
+        imageRepository = ImageRepositoryImpl(imageApiService!!)
 
     }
 
@@ -71,7 +71,7 @@ class MainActivityViewModel : ViewModel() {
         val preset = getMultiPartFormRequestBody("maozn8ci")
 
         viewModelScope.launch {
-            val response = image?.uploadImage(profileImageBody, preset)
+            val response = imageRepository?.uploadImage(profileImageBody, preset)
             when (response) {
                 is Resource.Success -> {
                     mainEvent_.value = MainEvent.Success(response.data!!)
