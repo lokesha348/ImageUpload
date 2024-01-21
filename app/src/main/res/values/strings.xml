@@ -9,5 +9,5 @@
     <string name="cancel">Cancel</string>
     <string name="permission_grant_access">You need to grant access to</string>
     <string name="file_uri_exposure">disableDeathOnFileUriExposure</string>
-    <string name="pick_image">Choose image</string>
+    <string name="pick_image">Click here to choose image</string>
 </resources>
