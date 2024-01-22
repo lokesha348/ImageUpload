@@ -191,7 +191,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun openCamera() {
-        if (permissionsRunTime!!.getPermission(permissionList, this@MainActivity)) {
+        if (Build.VERSION.SDK_INT >= 23) {
+            if (permissionsRunTime!!.getPermission(permissionList, this@MainActivity)) {
+                dispatchTakePictureIntent()
+            }
+        } else {
             dispatchTakePictureIntent()
         }
     }
@@ -208,6 +212,7 @@ class MainActivity : AppCompatActivity() {
                 photoFile = createImageFileDp()
                 val photoURI = FileProvider.getUriForFile(this, Constants.SOFTGROUP, photoFile)
                 takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, photoURI)
+                takePictureIntent.addFlags(Intent.FLAG_GRANT_WRITE_URI_PERMISSION)
                 startActivityForResult(takePictureIntent, IMAGE_CAPTURE)
             }
         } catch (e: Exception) {
