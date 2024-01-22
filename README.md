@@ -40,7 +40,8 @@ The Image Upload Component is implemented using the MVVM (Model-View-ViewModel) 
 * **ViewModel:** Acts as a mediator between the Model and View, handling UI-related logic.
 
 ### Cloudinary API Integration
-To enhance image upload capabilities, the Image Upload Component integrates seamlessly with the Cloudinary API. This allows for seamless and efficient image storage and retrieval. The `uploadImage` function has been updated to utilize the Cloudinary API for a more robust image upload process.
+To enhance image upload capabilities, the Image Upload Component integrates seamlessly with the Cloudinary API. This allows for seamless and efficient image storage and retrieval.
+The `uploadImage` function has been updated to utilize the Cloudinary API for a more robust image upload process.
 
 ## Usage Note
 
